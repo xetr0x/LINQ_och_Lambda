@@ -51,15 +51,26 @@ namespace LINQ_och_Lambda
             button5.Text = "The most expensiv car";
 
 
-            button1.Click += new EventHandler
-                (Delegate) => {
 
-            }
-                ;
-            button2.Click += new EventHandler(ButtonHandler);
-            button3.Click += new EventHandler(ButtonHandler);
-            button4.Click += new EventHandler(ButtonHandler);
-            button5.Click += new EventHandler(ButtonHandler);
+
+            button1.Click += new EventHandler(
+            (sender, e) =>
+            {
+                int red = Cars.Count(x => x.Color == "Red");
+                listBox1.Items.Add($"Det finns {red} röda bilar");
+            });
+
+            button2.Click += new EventHandler((sender, e) =>
+            {
+                int olderthan = Cars.Count(x => x.Year > 2003);
+                listBox1.Items.Add($"Det finns {olderthan} bilar äldre än 2003");
+            });
+
+            button3.Click += new EventHandler((sender, e) =>
+            {
+
+            });
+
 
 
 
@@ -68,8 +79,8 @@ namespace LINQ_och_Lambda
 
 
 
-    }
-        }
+    
+
 
 
     class Car
