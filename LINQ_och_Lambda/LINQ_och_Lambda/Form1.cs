@@ -18,9 +18,9 @@ namespace LINQ_och_Lambda
         {
 
             InitializeComponent();
-            List<Car> Cars = new List<Car>();
+            List<Car> Cars = new List<Car>();   
 
-            Cars.Add(new Car() { Id = 1, Make = "Volvo", Model = "V70", Color = "White", Km = 1292, Price = 3465, Year = 1998 });
+            Cars.Add(new Car() { Id = 1, Make = "Volvo", Model = "V70", Color = "White", Km = 1292, Price = 3465, Year = 1998 });   //All Cars
             Cars.Add(new Car() { Id = 31, Make = "Skoda", Model = "Fabia", Color = "Red", Km = 1292, Price = 76556, Year = 2001 });
             Cars.Add(new Car() { Id = 14, Make = "Volvo", Model = "XC90", Color = "Blue", Km = 432, Price = 32001, Year = 2003 });
             Cars.Add(new Car() { Id = 4, Make = "Volvo", Model = "V70", Color = "Red", Km = 1223492, Price = 24512, Year = 1998 });
@@ -43,8 +43,8 @@ namespace LINQ_och_Lambda
             Cars.Add(new Car() { Id = 801, Make = "Audi", Model = "A7", Color = "White", Km = 492, Price = 187500, Year = 2002 });
             Cars.Add(new Car() { Id = 6031, Make = "Audi", Model = "A6", Color = "Blue", Km = 553, Price = 55400, Year = 2011 });
             
-            var sortcars = Cars.OrderBy(x => x.Make);
-            foreach (var item in sortcars)
+            var sortcars = Cars.OrderBy(x => x.Make);   // sorting all by make
+            foreach (var item in sortcars)              //writing them down
             {
                 listBox1.Items.Add($"ID:{item.Id} Make:{item.Make} Model:{item.Model} Color:{item.Color} km:{item.Km} Price:{item.Price} Year:{item.Year}");
             }
@@ -58,32 +58,32 @@ namespace LINQ_och_Lambda
 
 
 
-            BtnCountRed.Click += new EventHandler(
+            BtnCountRed.Click += new EventHandler(                      //Method for the red count button
             (sender, e) =>
             {
                 int red = Cars.Count(x => x.Color == "Red");
                 listBox1.Items.Add($"There are  {red} red cars");
             });
 
-            BtnCountolderthan2003.Click += new EventHandler((sender, e) =>
+            BtnCountolderthan2003.Click += new EventHandler((sender, e) =>              //Method for the Count older than 2003 button
             {
                 int olderthan = Cars.Count(x => x.Year > 2003);
                 listBox1.Items.Add($"There are {olderthan} cars younger than 2003");
             });
 
-            btnGreyVolvos.Click += new EventHandler((sender, e) =>
+            btnGreyVolvos.Click += new EventHandler((sender, e) =>                      //Method for Grey volvos button
             {
                 int GreyVolvo = Cars.FindAll(x => x.Make == "Volvo").Count(y => y.Color == "Grey");
                 listBox1.Items.Add($"There are {GreyVolvo} grey Volvos");
             });
 
-            BtnAverageDistance.Click += new EventHandler((sender, e) =>
+            BtnAverageDistance.Click += new EventHandler((sender, e) =>                 //MEthod for Average distance
             {
                 double AverageDistance = Cars.FindAll(x => x.Make == "BMW").Average(y => y.Km);
                 listBox1.Items.Add($"The average distance for BMWs' is {AverageDistance} ");
             });
 
-            BtnMostExpensiveCar.Click += new EventHandler((sender, e) =>
+            BtnMostExpensiveCar.Click += new EventHandler((sender, e) =>                //Method for expensive car
             {
                  Cars = Cars.OrderByDescending(x => x.Price).ToList();
                 listBox1.Items.Add($"The most expensive car in storage is {Cars[0].Make} {Cars[0].Model} {Cars[0].Year} With the price of: {Cars[0].Price}");
@@ -103,7 +103,7 @@ namespace LINQ_och_Lambda
 
 
 
-    class Car
+    class Car               //Car class 
         {
            public int Id;
            public string Make;
