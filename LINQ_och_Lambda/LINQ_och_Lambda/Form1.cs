@@ -57,19 +57,32 @@ namespace LINQ_och_Lambda
             (sender, e) =>
             {
                 int red = Cars.Count(x => x.Color == "Red");
-                listBox1.Items.Add($"Det finns {red} röda bilar");
+                listBox1.Items.Add($"There are  {red} red cars");
             });
 
             button2.Click += new EventHandler((sender, e) =>
             {
                 int olderthan = Cars.Count(x => x.Year > 2003);
-                listBox1.Items.Add($"Det finns {olderthan} bilar äldre än 2003");
+                listBox1.Items.Add($"There are {olderthan} cars younger than 2003");
             });
 
             button3.Click += new EventHandler((sender, e) =>
             {
-
+                int GreyVolvo = Cars.FindAll(x => x.Make == "Volvo").Count(y => y.Color == "Grey");
+                listBox1.Items.Add($"There are {GreyVolvo} grey Volvos");
             });
+
+            button4.Click += new EventHandler((sender, e) =>
+            {
+                double AverageDistance = Cars.FindAll(x => x.Make == "BMW").Average(y => y.Km);
+                listBox1.Items.Add($"The average distance for BMWs' is {AverageDistance} ");
+            });
+
+            button5.Click += new EventHandler((sender, e) =>
+            {
+               
+            });
+
 
 
 
