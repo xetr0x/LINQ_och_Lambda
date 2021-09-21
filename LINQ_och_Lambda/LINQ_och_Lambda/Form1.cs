@@ -43,7 +43,32 @@ namespace LINQ_och_Lambda
             Cars.Add(new Car() { Id = 801, Make = "Audi", Model = "A7", Color = "White", Km = 492, Price = 187500, Year = 2002 });
             Cars.Add(new Car() { Id = 6031, Make = "Audi", Model = "A6", Color = "Blue", Km = 553, Price = 55400, Year = 2011 });
 
+            int red = Cars.Count(x => x.Color == "red");
+
+
+            button1.Text = "Red color count";
+            button2.Text = "Cars older than 2003";
+            button3.Text = "Gray cars";
+            button4.Text = "Average driving distance ";
+            button5.Text = "The most expensiv car";
+
+
+            button1.Click += new EventHandler(ButtonHandler);
+            button2.Click += new EventHandler(ButtonHandler);
+            button3.Click += new EventHandler(ButtonHandler);
+            button4.Click += new EventHandler(ButtonHandler);
+            button5.Click += new EventHandler(ButtonHandler);
+
+
+
         }
+
+        private void ButtonHandler(object sender, EventArgs e)
+        {
+            
+        }
+
+
     class Car
         {
            public int Id;
@@ -54,5 +79,7 @@ namespace LINQ_och_Lambda
            public int Price;
            public int Year;
         }
+
+
     }
 }
