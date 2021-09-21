@@ -42,13 +42,18 @@ namespace LINQ_och_Lambda
             Cars.Add(new Car() { Id = 991, Make = "Volvo", Model = "V70", Color = "Red", Km = 3475, Price = 14512, Year = 1998 });
             Cars.Add(new Car() { Id = 801, Make = "Audi", Model = "A7", Color = "White", Km = 492, Price = 187500, Year = 2002 });
             Cars.Add(new Car() { Id = 6031, Make = "Audi", Model = "A6", Color = "Blue", Km = 553, Price = 55400, Year = 2011 });
-
+            
+            var sortcars = Cars.OrderBy(x => x.Make);
+            foreach (var item in sortcars)
+            {
+                listBox1.Items.Add($"ID:{item.Id} Make:{item.Make} Model:{item.Model} Color:{item.Color} km:{item.Km} Price:{item.Price} Year:{item.Year}");
+            }
 
             BtnCountRed.Text = "Red color count";
             BtnCountolderthan2003.Text = "Cars older than 2003";
             btnGreyVolvos.Text = "Gray cars";
             BtnAverageDistance.Text = "Average driving distance ";
-            BtnMostExpensiveCar.Text = "The most expensiv car";
+            BtnMostExpensiveCar.Text = "The most expensive car";
 
 
 
