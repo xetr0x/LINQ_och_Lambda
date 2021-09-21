@@ -80,7 +80,9 @@ namespace LINQ_och_Lambda
 
             BtnMostExpensiveCar.Click += new EventHandler((sender, e) =>
             {
-               
+                 Cars = Cars.OrderByDescending(x => x.Price).ToList();
+                listBox1.Items.Add($"The most expensive car in storage is {Cars[0].Make} {Cars[0].Model} {Cars[0].Year} With the price of: {Cars[0].Price}");
+
             });
 
 
