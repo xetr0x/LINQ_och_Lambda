@@ -40,14 +40,14 @@ namespace LINQ_och_Lambda
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(175, 60);
+            this.listBox1.Location = new System.Drawing.Point(399, 28);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(647, 277);
+            this.listBox1.Size = new System.Drawing.Size(647, 550);
             this.listBox1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(110, 443);
+            this.button1.Location = new System.Drawing.Point(63, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 49);
             this.button1.TabIndex = 1;
@@ -56,7 +56,7 @@ namespace LINQ_och_Lambda
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(291, 443);
+            this.button2.Location = new System.Drawing.Point(63, 143);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 49);
             this.button2.TabIndex = 2;
@@ -65,7 +65,7 @@ namespace LINQ_och_Lambda
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(464, 443);
+            this.button3.Location = new System.Drawing.Point(63, 256);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(138, 49);
             this.button3.TabIndex = 3;
@@ -74,7 +74,7 @@ namespace LINQ_och_Lambda
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(631, 443);
+            this.button4.Location = new System.Drawing.Point(63, 358);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(138, 49);
             this.button4.TabIndex = 4;
@@ -83,7 +83,7 @@ namespace LINQ_och_Lambda
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(795, 443);
+            this.button5.Location = new System.Drawing.Point(63, 472);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(138, 49);
             this.button5.TabIndex = 5;
