@@ -30,11 +30,11 @@ namespace LINQ_och_Lambda
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BtnCountRed = new System.Windows.Forms.Button();
+            this.BtnCountolderthan2003 = new System.Windows.Forms.Button();
+            this.btnGreyVolvos = new System.Windows.Forms.Button();
+            this.BtnAverageDistance = new System.Windows.Forms.Button();
+            this.BtnMostExpensiveCar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -47,59 +47,59 @@ namespace LINQ_och_Lambda
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(63, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 49);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnCountRed.Location = new System.Drawing.Point(63, 28);
+            this.BtnCountRed.Name = "button1";
+            this.BtnCountRed.Size = new System.Drawing.Size(138, 49);
+            this.BtnCountRed.TabIndex = 1;
+            this.BtnCountRed.Text = "button1";
+            this.BtnCountRed.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(63, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 49);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnCountolderthan2003.Location = new System.Drawing.Point(63, 143);
+            this.BtnCountolderthan2003.Name = "button2";
+            this.BtnCountolderthan2003.Size = new System.Drawing.Size(138, 49);
+            this.BtnCountolderthan2003.TabIndex = 2;
+            this.BtnCountolderthan2003.Text = "button2";
+            this.BtnCountolderthan2003.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(63, 256);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(138, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGreyVolvos.Location = new System.Drawing.Point(63, 256);
+            this.btnGreyVolvos.Name = "button3";
+            this.btnGreyVolvos.Size = new System.Drawing.Size(138, 49);
+            this.btnGreyVolvos.TabIndex = 3;
+            this.btnGreyVolvos.Text = "button3";
+            this.btnGreyVolvos.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(63, 358);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 49);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnAverageDistance.Location = new System.Drawing.Point(63, 358);
+            this.BtnAverageDistance.Name = "button4";
+            this.BtnAverageDistance.Size = new System.Drawing.Size(138, 49);
+            this.BtnAverageDistance.TabIndex = 4;
+            this.BtnAverageDistance.Text = "button4";
+            this.BtnAverageDistance.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(63, 472);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(138, 49);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.BtnMostExpensiveCar.Location = new System.Drawing.Point(63, 472);
+            this.BtnMostExpensiveCar.Name = "button5";
+            this.BtnMostExpensiveCar.Size = new System.Drawing.Size(138, 49);
+            this.BtnMostExpensiveCar.TabIndex = 5;
+            this.BtnMostExpensiveCar.Text = "button5";
+            this.BtnMostExpensiveCar.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 612);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnMostExpensiveCar);
+            this.Controls.Add(this.BtnAverageDistance);
+            this.Controls.Add(this.btnGreyVolvos);
+            this.Controls.Add(this.BtnCountolderthan2003);
+            this.Controls.Add(this.BtnCountRed);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -110,11 +110,11 @@ namespace LINQ_och_Lambda
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BtnCountRed;
+        private System.Windows.Forms.Button BtnCountolderthan2003;
+        private System.Windows.Forms.Button btnGreyVolvos;
+        private System.Windows.Forms.Button BtnAverageDistance;
+        private System.Windows.Forms.Button BtnMostExpensiveCar;
     }
 }
 

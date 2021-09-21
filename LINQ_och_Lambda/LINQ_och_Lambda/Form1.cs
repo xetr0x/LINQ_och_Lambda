@@ -44,41 +44,41 @@ namespace LINQ_och_Lambda
             Cars.Add(new Car() { Id = 6031, Make = "Audi", Model = "A6", Color = "Blue", Km = 553, Price = 55400, Year = 2011 });
 
 
-            button1.Text = "Red color count";
-            button2.Text = "Cars older than 2003";
-            button3.Text = "Gray cars";
-            button4.Text = "Average driving distance ";
-            button5.Text = "The most expensiv car";
+            BtnCountRed.Text = "Red color count";
+            BtnCountolderthan2003.Text = "Cars older than 2003";
+            btnGreyVolvos.Text = "Gray cars";
+            BtnAverageDistance.Text = "Average driving distance ";
+            BtnMostExpensiveCar.Text = "The most expensiv car";
 
 
 
 
-            button1.Click += new EventHandler(
+            BtnCountRed.Click += new EventHandler(
             (sender, e) =>
             {
                 int red = Cars.Count(x => x.Color == "Red");
                 listBox1.Items.Add($"There are  {red} red cars");
             });
 
-            button2.Click += new EventHandler((sender, e) =>
+            BtnCountolderthan2003.Click += new EventHandler((sender, e) =>
             {
                 int olderthan = Cars.Count(x => x.Year > 2003);
                 listBox1.Items.Add($"There are {olderthan} cars younger than 2003");
             });
 
-            button3.Click += new EventHandler((sender, e) =>
+            btnGreyVolvos.Click += new EventHandler((sender, e) =>
             {
                 int GreyVolvo = Cars.FindAll(x => x.Make == "Volvo").Count(y => y.Color == "Grey");
                 listBox1.Items.Add($"There are {GreyVolvo} grey Volvos");
             });
 
-            button4.Click += new EventHandler((sender, e) =>
+            BtnAverageDistance.Click += new EventHandler((sender, e) =>
             {
                 double AverageDistance = Cars.FindAll(x => x.Make == "BMW").Average(y => y.Km);
                 listBox1.Items.Add($"The average distance for BMWs' is {AverageDistance} ");
             });
 
-            button5.Click += new EventHandler((sender, e) =>
+            BtnMostExpensiveCar.Click += new EventHandler((sender, e) =>
             {
                
             });
